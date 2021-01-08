@@ -4,7 +4,7 @@ services:
     - docker
 
 before_install:
-    - docker build -t sainteddy/Docker-react -f Dockerfile.dev .
-    
+    - docker build -t sainteddy/docker-react -f Dockerfile.dev .
+
 script:
-    - docker run -e CI=true sainteddy/Docker-react npm run test
+    - docker run -e CI=true sainteddy/docker-react npm run test
